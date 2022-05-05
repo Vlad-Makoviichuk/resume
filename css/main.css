@@ -1,0 +1,66 @@
+:root {
+    --sidebar-bg: #2E2E48;
+    --main-bg: #232339;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--main-bg);
+
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+}
+
+.resume-page {
+    display: flex;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.resume-sidebar {
+    width: 400px;
+    height: 100%;
+    background-color: var(--sidebar-bg);
+}
+
+.resume-sidebar__photo {
+    margin: 0 0 15px;
+}
+
+.resume-sidebar__content {
+    padding: 0 25px;
+}
+
+.resume-sidebar__title {
+    margin: 0 0 5px;
+
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.resume-sidebar__job {
+    padding: 0 0 25px;
+
+    font-weight: 500;
+    font-size: 21px;
+    letter-spacing: 0.01em;
+    background: linear-gradient(90deg, #A478E8 0%, #516CF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
