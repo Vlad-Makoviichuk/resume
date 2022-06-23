@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb {
 }
 .resume-content {
     flex: 1;
-    padding: 30px 25px 30px 25px;
+    padding: 20px 25px 20px 25px;
 }
 
 .resume-content__wrapper {
@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb {
 .resume-content__title {
     position: relative;
 
-    margin: 0 0 25px;
+    margin: 0 0 15px;
 
     font-weight: 600;
     font-size: 24px;
@@ -231,7 +231,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .resume-content__list {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
+}
+
+.skills-list.features {
+    margin: 0 0 20px;
 }
 
 .resume-content__item,
