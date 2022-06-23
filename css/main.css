@@ -62,6 +62,11 @@ body::-webkit-scrollbar-thumb {
     margin: 0 0 15px;
 }
 
+.resume-sidebar__top-container {
+    padding: 0 0 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .resume-sidebar__meta {
     padding: 0 25px;
 }
@@ -74,8 +79,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .resume-sidebar__job {
-    padding: 0 0 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 0 15px;
     background: linear-gradient(90deg, #A478E8 0%, #516CF7 100%);
     background-clip: text;
 
@@ -85,6 +89,39 @@ body::-webkit-scrollbar-thumb {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
+}
+
+.resume-sidebar__link {
+    display: inline-flex;
+    align-items: center;
+    padding: 12.5px 18px 12.5px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(326.84deg, #e09b3d 6.32%, #c74c4d 32.21%, #c21975 58.1%, #7024c4 92.62%);
+    background-size: 100% 200%;
+    background-position: 0 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition: background-position 300ms ease;
+}
+
+.resume-sidebar__link:hover {
+    background-position: 0 100%;
+}
+
+.resume-sidebar__link::before {
+    width: 20px;
+    height: 20px;
+    margin: -2px 5px 0 0;
+    background-image: url('../images/instagram.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    content: '';
 }
 
 .features,
@@ -204,6 +241,15 @@ body::-webkit-scrollbar-thumb {
     padding: 15px;
     border-radius: 5px;
     background-color: #2E2E48;
+
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.resume-content__item.is-animated,
+.skills-list.is-animated {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .resume-content__item {
